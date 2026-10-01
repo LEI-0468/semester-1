@@ -14,3 +14,17 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+try:
+    
+    num1 = float(input("Number1:"))
+
+    num2 = float(input("Number2:"))
+
+    ans = float( num1* num2)
+     
+    print(ans)
+except ValueError:
+    
+    print("this is not a number!")
+
+
