@@ -14,7 +14,7 @@ try:
     # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
     total = int(int(save)*12)
     # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
-    total += float(total*0.8)
+    total += float(total*0.008)
     
     # print this out for the user with a suitable message.
     print("You will save £" +f"{total:.2f}"  + " in a year!!")
