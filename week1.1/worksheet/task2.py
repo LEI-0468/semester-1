@@ -13,9 +13,9 @@ try:
     save = input("Please enter a number about the amount of monthly saving: ")
     # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
     total = int(int(save)*12)
+    print("You will save £" +str(total)+ " in a year!!(without interest)")
     # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
     total += float(total*0.008)
-    
     # print this out for the user with a suitable message.
     print("You will save £" +f"{total:.2f}"  + " in a year!!")
  # Validate that they have entered an integer.
