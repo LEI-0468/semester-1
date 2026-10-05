@@ -9,11 +9,14 @@ rivers = {
 print(rivers)
 
 # Add two new entries to the rivers database
-
+rivers["place 1"]="river 1"
+rivers["place 2"]="river 2"
 # Display all the keys
-
+print(rivers.keys())
 # Display all the values
-
+print(rivers.values())
 # Display all the key:value pairs, as tuples
-
+print(rivers.items())
 # Delete an entry from the rivers database
+rivers.pop("place 1")
+print(rivers.items())
