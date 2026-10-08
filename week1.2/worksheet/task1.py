@@ -5,7 +5,7 @@ try:
     if (num < 0 ): sys.exit("Error: Grade must be an integer between 0 and 100") 
     if (num > 100) : sys.exit("Error: Grade must be an integer between 0 and 100") 
     if (num < 40) : print( f"{num} is a Fail")
-    elif (num < 70 and num > 39) : print( f"{num} is a Pass")
-    elif (num < 100 and num > 69) : print( f"{num} is a Distinction")
+    if (num < 70 and num > 39) : print( f"{num} is a Pass")
+    if (num < 100 and num > 69) : print( f"{num} is a Distinction")
 except ValueError:
     sys.exit("Error: Grade must be an integer between 0 and 100")
