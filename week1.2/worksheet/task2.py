@@ -24,10 +24,7 @@ print(f"Maximum = {nums[len(nums)-1]}")
 
 
 mean =float(0)
-sum =0
-for i in range (len(nums)):
-    sum +=nums[i]
-mean = (sum/len(nums))
+mean = sum(nums)/len(nums)
 print(f"Mean = {mean}")
 
 
