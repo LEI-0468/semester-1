@@ -28,7 +28,10 @@ class Person:
           ini += i[0].upper() 
         return ini
     def is_birthday(self):
-        if date.today().month == self.birth.month & self.birth.day == date.today().day :
+        """
+        check the birthday meet or not
+        """
+        if date.today().month == self.birth.month and self.birth.day == date.today().day :
             return True
         else:
             return False
