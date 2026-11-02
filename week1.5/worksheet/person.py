@@ -7,6 +7,9 @@ class Person:
     A Person, with a name and a date of birth.
     """
     def __init__(self,name,birth):
+        """
+        initialize the values and check 
+        """
         self.name= name
         self.birth = birth
         if not isinstance(name, str):
@@ -18,10 +21,11 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def initials(self):
+        """find the letter and capitalize"""
         names = self.name.split()
         ini = ""
         for i in names:
-          ini += i[0] 
+          ini += i[0].upper() 
         return ini
     def is_birthday(self):
         if date.today().month == self.birth.month & self.birth.day == date.today().day :
